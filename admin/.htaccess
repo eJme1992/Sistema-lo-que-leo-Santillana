@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>  
+  RewriteEngine On
+  #cambiar a RewriteBase / cuando lo suba
+  RewriteBase /loqueleo/backoffice/
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond $1 !^(index\.php|assets)
+  RewriteRule ^(.*)$ index.php?/$1 [QSA,L]
+</IfModule>
+
