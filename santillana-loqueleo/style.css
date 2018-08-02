@@ -1,0 +1,693 @@
+/*
+Theme Name: IDPeru.net Theme
+Theme URI: http://html5reset.org
+Description: A style-free theme to get you started on an HTML5-based WordPress theme of your own.
+Author: Monkey Do! + @ckhicks
+Author URI: http://monkeydo.biz
+Version: 2.0
+License: BSD 2-Clause
+License URI: http://opensource.org/licenses/bsd-license.php
+*/
+
+/* Ok, this is where the fun starts.
+-------------------------------------------------------------------------------*/
+/*@font-face {
+    font-family: 'Pluto';
+    src: font-url('_/fonts/pluto/plutothin_0-webfont.eot');
+    src: font-url('_/fonts/pluto/plutothin_0-webfont.eot?#iefix') format('embedded-opentype'), font-url('_/fonts/pluto/plutothin_0-webfont.woff') format('woff'), font-url('_/fonts/pluto/plutothin_0-webfont.ttf') format('truetype'), font-url('_/fonts/pluto/plutothin_0-webfont.svg#plutothin_0-webfont') format('svg');
+    font-weight: 100;
+    font-style: normal;
+
+
+} @font-face {
+    font-family: 'Pluto';
+    src: font-url('_/fonts/pluto/plutoextralight_0-webfont.eot');
+    src: font-url('_/fonts/pluto/plutoextralight_0-webfont.eot?#iefix') format('embedded-opentype'), font-url('_/fonts/pluto/plutoextralight_0-webfont.woff') format('woff'), font-url('_/fonts/pluto/plutoextralight_0-webfont.ttf') format('truetype'), font-url('_/fonts/pluto/plutoextralight_0-webfont.svg#plutoextralight_0-webfont') format('svg');
+    font-weight: 200;
+    font-style: normal;
+
+
+} @font-face {
+    font-family: 'Pluto';
+    src: font-url('_/fonts/pluto/plutolight_0-webfont.eot');
+    src: font-url('_/fonts/pluto/plutolight_0-webfont.eot?#iefix') format('embedded-opentype'), font-url('_/fonts/pluto/plutolight_0-webfont.woff') format('woff'), font-url('_/fonts/pluto/plutolight_0-webfont.ttf') format('truetype'), font-url('_/fonts/pluto/plutolight_0-webfont.svg#plutolight_0-webfont') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+
+} @font-face {
+    font-family: 'Pluto';
+    src: font-url('_/fonts/pluto/plutoregular_0-webfont.eot');
+    src: font-url('_/fonts/pluto/plutoregular_0-webfont.eot?#iefix') format('embedded-opentype'), font-url('_/fonts/pluto/plutoregular_0-webfont.woff') format('woff'), font-url('_/fonts/pluto/plutoregular_0-webfont.ttf') format('truetype'), font-url('_/fonts/pluto/plutoregular_0-webfont.svg#plutoregular_0-webfont') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+
+} @font-face {
+    font-family: 'Pluto';
+    src: font-url('_/fonts/pluto/plutomedium_0-webfont.eot');
+    src: font-url('_/fonts/pluto/plutomedium_0-webfont.eot?#iefix') format('embedded-opentype'), font-url('_/fonts/pluto/plutomedium_0-webfont.woff') format('woff'), font-url('_/fonts/pluto/plutomedium_0-webfont.ttf') format('truetype'), font-url('_/fonts/pluto/plutomedium_0-webfont.svg#plutomedium_0-webfont') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+
+} @font-face {
+    font-family: 'Pluto';
+    src: font-url('_/fonts/pluto/plutobold_0-webfont.eot');
+    src: font-url('_/fonts/pluto/plutobold_0-webfont.eot?#iefix') format('embedded-opentype'), font-url('_/fonts/pluto/plutobold_0-webfont.woff') format('woff'), font-url('_/fonts/pluto/plutobold_0-webfont.ttf') format('truetype'), font-url('_/fonts/pluto/plutobold_0-webfont.svg#plutobold_0-webfont') format('svg');
+    font-weight: 600;
+    font-style: normal;
+
+
+} @font-face {
+    font-family: 'Pluto';
+    src: font-url('_/fonts/pluto/plutoheavy_0-webfont.eot');
+    src: font-url('_/fonts/pluto/plutoheavy_0-webfont.eot?#iefix') format('embedded-opentype'), font-url('_/fonts/pluto/plutoheavy_0-webfont.woff') format('woff'), font-url('_/fonts/pluto/plutoheavy_0-webfont.ttf') format('truetype'), font-url('_/fonts/pluto/plutoheavy_0-webfont.svg#plutoheavy_0-webfont') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+
+} @font-face {
+    font-family: 'Pluto';
+    src: font-url('_/fonts/pluto/plutoblack_0-webfont.eot');
+    src: font-url('_/fonts/pluto/plutoblack_0-webfont.eot?#iefix') format('embedded-opentype'), font-url('_/fonts/pluto/plutoblack_0-webfont.woff') format('woff'), font-url('_/fonts/pluto/plutoblack_0-webfont.ttf') format('truetype'), font-url('_/fonts/pluto/plutoblack_0-webfont.svg#plutoblack_0-webfont') format('svg');
+    font-weight: 800;
+    font-style: normal; 
+} */
+@font-face {
+    font-family: "PlutoCondRegular";
+    font-style: normal;
+    src: url("_/fonts/PlutoCondRegular.otf");
+}
+/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
+body {font: 13px 'PlutoCondRegular', sans-serif;}
+
+/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
+
+/* We like off-black for text. */
+body, select, input, textarea {color: #333;}
+
+a       {color: #03f;}
+a:hover {color: #69f;}
+
+a         {font-family: 'PlutoCondRegular';}
+b         {font-family: 'PlutoCondRegular';}
+h1        {font-family: 'PlutoCondRegular';} 
+h2        {font-family: 'PlutoCondRegular';} 
+h3        {font-family: 'PlutoCondRegular';} 
+h4        {font-family: 'PlutoCondRegular';} 
+span      {font-family: 'PlutoCondRegular';}
+label     {font-family: 'PlutoCondRegular';}
+.text     {font-family: 'PlutoCondRegular';}
+.soy-typo {font-family: 'PlutoCondRegular';}
+#texto    {font-family: 'Roboto', sans-serif;}
+p         {font-family: 'Roboto', sans-serif;}
+#texto h4 {font-family: 'Roboto', sans-serif; font-size:23px;}
+#texto a {font-family: 'Roboto', sans-serif;}
+#texto b {font-family: 'Roboto', sans-serif;}
+.form-control { 
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+}
+#sep {height:45px;}
+#separador { border-bottom-width:3px; border-bottom:#98979D;}
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;}
+
+/*  j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;}
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+hr{ 
+    height:5px;  
+    background-color:#ff0000; 
+} 
+
+.btn{
+    display: inline-block;
+    background: #716AA7;
+    text-align: center;
+    padding: 0.5em 1.5em;
+    color: #fff;
+    border-radius: 10px;
+}
+.btn:hover{
+    color: #fff;
+    background: #394B9F;
+}
+
+#wpusb-container-square{margin-top:-5px;}
+.show-grid {margin-bottom:20px;}
+
+.alert {max-width:450px;}
+
+/* And here begins the WordPress fun.
+-------------------------------------------------------------------------------*/
+#wrapper {width: 960px; margin: 20px auto;}
+
+#header {padding:20px 0px;}
+
+.dropdown-menu {position: absolute;top: 100%;left: 0;z-index: 1000;display: none;float: left;min-width: 160px;padding: 5px 0;margin: 2px 0 0;font-size: 14px;text-align: left;list-style: none;background-color: #fff;-webkit-background-clip: padding-box;background-clip: padding-box;border: 1px solid #ccc;border: 1px solid rgba(0, 0, 0, .15);border-radius: 20px;-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);box-shadow: 0 6px 12px rgba(0, 0, 0, .175);}
+.dropdown-menu.pull-right {right: 0;left: auto;}
+.dropdown-menu .divider {height: 1px;margin: 9px 0;overflow: hidden;background-color: #e5e5e5;}
+.dropdown-menu > li > a {display: block;padding: 3px 20px;clear: both;font-weight: normal;line-height: 1.42857143;color: #333;white-space: nowrap;}
+.dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus {color: #262626;text-decoration: none;background-color: #f5f5f5;}
+.dropdown-menu > .active > a,.dropdown-menu > .active > a:hover,.dropdown-menu > .active > a:focus {color: #fff;text-decoration: none;background-color: #337ab7;outline: 0;}
+.dropdown-menu > .disabled > a,.dropdown-menu > .disabled > a:hover,.dropdown-menu > .disabled > a:focus {color: #777;}
+.dropdown-menu > .disabled > a:hover,.dropdown-menu > .disabled > a:focus {text-decoration: none;cursor: not-allowed;background-color: transparent;background-image: none;filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);}
+.open > .dropdown-menu {display: block;}
+.open > a {outline: 0;}
+.dropdown-menu-right {right: 0;left: auto;}
+.dropdown-menu-left {right: auto;left: 0;}
+
+#top-header{
+    background: #F0F0F0;
+}
+#top-header .container-fluid{padding-right: 0; padding-left: 0;}
+#top-header .top-logo{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.5em 1em; 
+    background: #BF0125 url("_/img/logo_top.jpg") no-repeat center center;
+    width: 108px;
+    height: 34px;
+    float: left;
+}
+
+.menu-top{display: inline-block;padding:0 0.5em;float: left;}
+.menu-top ul{margin: 0;}
+.menu-top ul li{}
+.menu-top ul li a{color: #333; font-size: 12px;line-height: 34px;}
+#top-header .rd{float: right;padding: 0 0.5em;line-height: 34px; color: #000;}
+
+#header .navbar-brand{padding: 0; text-indent: -9999em; width: 160px; height: 60px; display: inline-block;background: url("_/img/logo_loqueleo.jpg") no-repeat center center}
+
+#nav {float:left;}
+
+#navbar-desktop{margin: 0 4em 0 14em;}
+
+#navbar-desktop ul{ display: inline-block;}
+#navbar-desktop ul li{display: inline-block;margin: 0 0.2em;padding: 4em 0 0;}
+#navbar-desktop ul li.inicio{background: url("_/img/ico_menu_1.png") no-repeat center top;}
+#navbar-desktop ul li.participar{background: url("_/img/ico_menu_2.png") no-repeat center top;}
+#navbar-desktop ul li.registrate{background: url("_/img/ico_menu_3.png") no-repeat center top;}
+#navbar-desktop ul li.premios{background: url("_/img/ico_menu_4.png") no-repeat center top;}
+#navbar-desktop ul li.ganadores{background: url("_/img/ico_menu_5.png") no-repeat center top;}
+#navbar-desktop .intro {background: url("_/img/ico_menu_6.png") no-repeat center top;margin: 0px 10px 0px 40px;float: left;vertical-align: text-bottom;padding-top: 50px;cursor:pointer;color:#000;}
+#navbar-desktop ul li a{color: #333;margin: 0; padding: 0 0.5em 1em;  }
+#navbar-desktop ul li.active a{background: url("_/img/menu_active.png") no-repeat center bottom;}
+#navbar-desktop ul li a:hover{background: url("_/img/menu_active.png") no-repeat center bottom;}
+.w-print{float: right;}
+.w-print .print{background: url("_/img/imprimir.png") no-repeat right center;padding: .5em 5.5em .5em 0; width: 150px;display: block;color: #333;margin: 1em 0 0 0;}
+
+.navbar-toggle .icon-bar{
+    background: #190D07;
+    width: 40px;
+    height: 6px;
+    border-radius:  8px 8px;
+}
+
+.row-navmobile{background: #fff;}
+
+#navbar{background: #eee;}
+#navbar ul{}
+#navbar ul li{}
+#menu-menu-1 li:after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -5px;
+}
+#menu-menu-1 li:before{
+    content: "";
+    width: 3px;
+    height: 38px;
+    background: #000;
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+#navbar ul li.ganadores:before{
+    content: none;
+}
+#navbar ul li.intro{
+    margin-top: 2em;cursor: pointer;
+}
+#navbar ul li.intro:before{
+    content: none;
+}
+
+
+#navbar ul li a{color: #000;font-size: 22px;padding: 0.25em 1em;}
+
+.navbar-toggle .icon-bar{background: #190D07;width: 40px;height: 6px;border-radius:  8px 8px;}
+
+
+#footer{padding: 2em 0;}
+#footer .logo_santillana{margin: 0 0 2em;}
+#footer .menu{}
+#footer .menu ul{margin: 0;}
+#footer .menu ul li{display: inline-block;position: relative;padding: 0 0.75em}
+#footer .menu ul li:first-child{padding-left: 0;}
+#footer .menu ul li:after{content: ""; height: 100%; width: 1px; position: absolute;right: 0;background: #333;top: 0;}
+#footer .menu ul li:last-child:after{content: none;}
+#footer .menu ul li a{color: #333; font-size: 12px;}
+#footer .consultas{margin-bottom: 1em;margin-top: 1em;}
+#footer .consultas .block{display: inline-block;margin: 0 1em 0 0;vertical-align: top;font-family: verdana, arial;}
+#footer .consultas .block.block1{background: url("_/img/ico-tlf.jpg") no-repeat left center;padding-left: 30px;}
+#footer .consultas .block .text{color: #E23038;font-weight: 600;display: inline-block;font-size: 16px;vertical-align: top;}
+#footer .consultas .block .num{color: #1174B8;font-weight: 600;display: inline-block;font-size: 20px;vertical-align: top;}
+#footer .consultas .block .num.small{font-size: 16px;}
+#footer .social{}
+#footer .social span{color: #85B037;font-weight: 600;display: inline-block;font-size: 16px;vertical-align: top;}
+#footer .social ul{display: inline-block;margin: 0;}
+#footer .social ul li{display: inline-block;margin: 0 0.5em}
+#footer .social ul li a{font-size: 22px;}
+#footer .social ul li a.mail {color: #E23038;}
+#footer .social ul li a.fb{color: #4267B2;}
+#footer .social ul li a.tw{color: #1DA1F2;}
+#footer .social ul li a i{}
+#footer .social ul li p {}
+
+#participar {}
+#participar h1 {color:#85B037;}
+#participar .btn {background-color:#85B037; width:85%;}
+#participar .col-md-7{margin-left:5%;}
+#participar .calltoaction p {margin:10px;}
+#participar p,#participar ul li {font-size:14px;}
+#participar ul li {margin-bottom: 10px;margin-left:20px;list-style-image:url('_/img/list-style-green.jpg');}
+
+
+#ganadores {font-size:16px;}
+#ganadores .ico {display:inline; width:150px;}
+#ganadores .row div {}
+#ganadores h1 {color:#FFCA45;}
+#ganadores h2 {font-size:300%;}
+#gaadores  a {font-family: 'Roboto', sans-serif;}
+#ganadores .btn {background-color:#FFCA45; height:60px;font-size:26px;}
+#ganadores .secun {background-color:#716AA7; height:60px;font-size:26px;}
+#ganadores .col-md-5 {font-family: 'Roboto', sans-serif;}
+#ganadores .botones {margin-top: 5px;}
+#ganadores .gris {font-family: 'Roboto', sans-serif;}
+#ganadores .text-right {font-family: 'Roboto', sans-serif;}
+
+#ganador {}
+#ganador .table1 tr {max-height:30px;}
+#ganador h1 {color:#DA203C;}
+#ganador .AMARILLA {height:42px; background-color:#FFCA45; color:#fff; width:140px; border-radius: 15px 15px 0px 0px;}
+#ganador .MORADA   {height:42px; background-color:#7369AA; color:#fff; width:140px; border-radius: 15px 15px 0px 0px;}
+#ganador .NARANJA  {height:42px; background-color:#E4A649; color:#fff; width:140px; border-radius: 15px 15px 0px 0px;}
+#ganador .AZUL     {height:42px; background-color:#1174B8; color:#fff; width:140px; border-radius: 15px 15px 0px 0px;}
+#ganador .JUVENIL  {height:42px; background-color:#DA203C; color:#fff; width:140px; border-radius: 15px 15px 0px 0px;}
+#ganador a {color:#fff;}
+#ganador .active a{background-color:transparent; color:black;border-width:0px;}
+#ganador button{background-color:#fff; color:black;}
+#ganador .navbar{margin-bottom:-8px;}
+
+#falta strong {font-size:25px;}
+
+#imprimir {font-size:16px;}
+#imprimir .row div {margin-bottom:1%;}
+#imprimir h1 {color:#FFCA45;}
+#imprimir h4 {font-weight: 400;}
+#imprimir .btn {background-color:#FFCA45; height:50px;font-size:20px;}
+#imprimir input {font-family: 'Roboto', sans-serif; background-color:#F9F9F9; width:40%; height:60px; text-align:center;  font-size:20px; font-weight: 800;}
+
+#registrar {margin-top:-8%; font-size:16px;}
+#registrar .row div {margin-bottom:1%; margin-top:2%;}
+#registrar h1 {color:#FFCA45;}
+#registrar h4 {font-weight: 400;}
+#registrar .btn {background-color:#FFCA45; height:50px;font-size:20px;}
+#registrar input {font-family: 'Roboto', sans-serif; background-color:#F9F9F9; width:40%; height:60px; text-align:center;  font-size:20px; font-weight: 800;}
+
+
+#registrar1 {font-size:13px; margin-top:-3%;}
+#registrar1 .row div {}
+#registrar1 h1     {color:#FFCA45;}
+#registrar1 h4     {color:#FFCA45; font-size:21px; margin-bottom:7%;}
+#registrar1 .btn   {background-color:#85B037; height:50px;font-size:20px;}
+#registrar1 input  {font-family: 'Roboto', sans-serif; background-color:#F9F9F9; font-size:14px; font-weight: 800;}
+#registrar1 .ico   {display:inline; width:35px;}
+#registrar1  label {margin-top:5px;}
+
+#registrar2 {font-size:13px;}
+#registrar2 .row div {}
+#registrar2 h1 {color:#FFCA45;}
+#registrar2 h4 {color:#FFCA45; font-size:21px; margin-bottom:7%;}
+#registrar2 .btn {background-color:#7369AA; height:50px;font-size:20px;}
+#registrar2 input {font-family: 'Roboto', sans-serif; background-color:#F9F9F9; font-size:14px; font-weight: 800;}
+#registrar2 .ico {display:inline; width:35px;}
+#registrar2 label {margin-top:5px;}
+
+
+#certificado {overflow: hidden;}
+#certificado p {
+    background-color: rgba(255,255,255,.8);
+    display: block;
+    position: fixed;
+    bottom: -16px;
+    left: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+
+
+#premios {}
+#premios .ico {display:inline; width:40px;}
+#premios h1 {color:#7369AA;}
+#premios h4 {font-weight: 400; }
+#premios h3 {color:#fff;  font-weight: 600;}
+#premios .sub {color:#DA203C;}
+#premios .alto{height:100px;}
+
+#premios .det-premio {margin-top:2%;}
+#premios .puesto {font-weight: bold;font-size: 18px;line-height: 19px;padding-top: 25px; display:inline-block;}
+#premios .puesto span {font-size:15px; }
+#premios .img-premio {height:90px; display:inline-block;}
+#premios .premio {margin-top:5px; display: inline;}
+#premios .panel { 
+    border-style: dashed; 
+    border-color:#A9A9AA;
+    border-radius: 14px; 
+    border-width: 1px;
+    background-color:#F4F5F7;
+    margin-left:1px;
+    margin-right:1px;}
+#premios .grado {height:42px; background-color:#DA203C; color:#fff; max-width:300px; border-radius: 30px 30px 0px 0px;}
+#premios .grado h3 {margin-top:2px;}
+#premios .completo {width: 97% ;margin-left:15px;}
+/* #premios .col-md-6 {background-image: url('_/img/vertical.png'); background-repeat:repeat-y; background-position: center center;} */
+
+
+#obrasdetalles {min-height:680px;}
+#obrasdetalles iframe{margin-top:20px;}
+#obrasdetalles p {font-size:16px;}
+#obrasdetalles i {color:red;}
+#obrasdetalles .row{margin-top:15px;}
+
+#NEGROBORDE {
+    background: url("_/img/fondo2.png") no-repeat center center;
+    background-size: cover;
+    margin-left:3px;
+    margin-right:3px;
+    line-height: normal;
+    border-radius: 14px;  
+    overflow:hidden;
+    max-height:  162px;
+    font-family: 'PlutoCondRegular';
+}
+#NEGROBORDE .color{
+    font-family: 'PlutoCondRegular';
+    background-color:#EDE8E2;
+    height:30px;
+}
+#MORADABORDE {
+    background-color:#ffffff;
+    border-radius: 8px;    
+    border: 4px solid #716BA9;}
+#MORADABORDE img { 
+    margin: 2px;
+    width: 98%;
+}
+#AMARILLABORDE {
+    border-radius: 20px;
+    border: 4px solid #EBCF49;
+    padding: 4px; }
+#AMARILLABORDE img { 
+    margin: 2px;
+    width: 98%;
+}
+#NARANJABORDE {
+    border-radius: 20px;
+    border: 4px solid #E4A649;
+    padding: 4px; }
+#NARANJABORDE img { 
+    margin: 2px;
+    width: 98%;
+}
+#AZULBORDE {
+    border-radius: 20px;
+    border: 4px solid #1174B8;
+    padding: 4px; }
+#AZULBORDE img { 
+    margin: 2px;
+    width: 98%;
+}
+#JUVENILBORDE {
+    border-radius: 20px;
+    border: 4px solid #E23038;
+    padding: 4px; }
+#JUVENILBORDE img { 
+    margin: 2px;
+    width: 98%;
+}
+
+
+
+
+#JUVENIL {}
+#JUVENIL .row div {margin-bottom:1%; margin-top:2%;}
+#JUVENIL .contenedor{  border-style: solid double;}
+#JUVENIL h1 {color:#E23038;}
+#JUVENIL h2 {color:#E23038;}
+#JUVENIL h4 {color:#E23038;}
+#JUVENIL h4 {font-weight: 400;}
+#JUVENIL .btn {background-color:#E23038;color:#ffffff; height:50px;font-size:20px;}
+#JUVENIL .btn:hover {background-color:#E23038;color:#FFFFFF;}
+#JUVENIL span{background-color:#E23038; color:#ffffff;}
+#JUVENIL .soy-typo{color:#E23038;}
+#JUVENIL .author {color:#98979D; min-width:20px;}
+#JUVENIL li {background-color:#E23038;}
+#JUVENIL .fa {color:#E23038;}
+
+#AMARILLA {}
+#AMARILLA .row div {margin-bottom:1%; margin-top:2%;}
+#AMARILLA .contenedor{  border-style: solid double;}
+#AMARILLA h1 {color:#EBCF43;}
+#AMARILLA h2 {color:#EBCF43;}
+#AMARILLA h3 {color:#EBCF43;}
+#AMARILLA h4 {font-weight: 400;}
+#AMARILLA .btn {background-color:#EBCF43;color:#ffffff; height:50px;font-size:20px;}
+#AMARILLA .btn:hover {background-color:#EBCF49;color:#FFFFFF;}
+#AMARILLA span{background-color:#EBCF49; color:#ffffff;}
+#AMARILLA .soy-typo{color:#EBCF49;}
+#AMARILLA .author {color:#98979D; min-width:20px;}
+#AMARILLA .fa {color:#EBCF49;}
+
+
+#MORADA {}
+#MORADA .row div {margin-bottom:1%; margin-top:2%;}
+#MORADA .contenedor{  border-style: solid double;}
+#MORADA h1 {color:#716BA3;}
+#MORADA h2 {color:#716BA3;}
+#MORADA h3 {color:#716BA3;}
+#MORADA h4 {font-weight: 400;}
+#MORADA .btn {background-color:#716BA3;color:#ffffff; height:50px;font-size:20px;}
+#MORADA .btn:hover {background-color:#716BA9;color:#FFFFFF;}
+#MORADA span{background-color:#716BA9; color:#ffffff;}
+#MORADA .soy-typo{color:#716BA9;}
+#MORADA .author {color:#98979D; min-width:20px;}
+#MORADA .fa {color:#716BA9;}
+
+#NARANJA {}
+#NARANJA .row div {margin-bottom:1%; margin-top:2%;}
+#NARANJA .contenedor{  border-style: solid double;}
+#NARANJA h1 {color:#E4A64B;}
+#NARANJA h2 {color:#E4A64B;}
+#NARANJA h3 {color:#E4A64B;}
+#NARANJA h4 {font-weight: 400;}
+#NARANJA .btn {background-color:#E4A64B;color:#ffffff; height:50px;font-size:20px;}
+#NARANJA .btn:hover {background-color:#E4A649;color:#FFFFFF;}
+#NARANJA span{background-color:#E4A649; color:#ffffff;}
+#NARANJA .soy-typo{color:#E4A649;}
+#NARANJA .author {color:#98979D; min-width:20px;}
+#NARANJA .fa {color:#E4A649;}
+
+
+#AZUL {}
+#AZUL .row div {margin-bottom:1%; margin-top:2%;}
+#AZUL .contenedor{  border-style: solid double;}
+#AZUL h1 {color:#1174B8;}
+#AZUL h2 {color:#1174B8;}
+#AZUL h3 {color:#1174B8;}
+#AZUL h4 {font-weight: 400;}
+#AZUL .btn {background-color:#1174B8;color:#ffffff; height:50px;font-size:20px;}
+#AZUL .btn:hover {background-color:#1174B1;color:#FFFFFF;}
+#AZUL span{background-color:#1174B8; color:#ffffff;}
+#AZUL .soy-typo{color:#1174B8;}
+#AZUL .author {color:#98979D; min-width:20px;}
+#AZUL .fa {color:#1174B8;}
+
+
+
+
+
+
+
+
+
+
+/* Home */
+.w-title-com{display: block;padding: 1em 0;text-align: center;}
+.w-title-com h3{font-size: 38px;color:#DD3333;margin: 0;}
+
+.w-title-com h2{
+    margin: 0.5em auto;
+    display: inline-block;
+    width: 418px;
+    height: 89px;
+    background: url("_/img/soyloqueleo.png") no-repeat center center;
+    text-indent: -9999em;
+}
+.w-title-com h4.subtitle{
+    font-size: 32px;color:#DD3333;margin: 0 auto;position: relative;width: 90%;
+}
+
+.w-title-com h4.subtitle .text{
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    background: #fff;
+    position: relative;
+}
+.w-title-com h4.subtitle .line{
+    height: 2px;
+    background: #000;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 26px;
+    left: 0;
+}
+
+.w-title-com p{
+    font-size: 15px;
+}
+
+
+.list-filter{padding: 0.5em 0;}
+.list-filter ul{text-align: center;display: block;}
+.list-filter ul li{display: inline-block;margin: 0 1em;}
+.list-filter ul li a{
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+}
+
+
+
+w-item-book{
+    max-width: 870px;
+}
+
+.item-book{}
+.item-book .image{min-height: 185px;margin-bottom: 1.5em;}
+.item-book .image img{display: block;}
+.item-book .author{display: block;color: #333;margin: 0 0 1em;}
+.item-book .soy-typo{display: block;color: #333;height: auto; overflow: hidden;line-height: 40px;color:  #716AA7;font-weight: 600;margin: 0 0 1em;}
+.item-book .soy-typo .num-filter{margin: 0 1em 0 0;float: left;width: 40px; height: 40px; display: block; background: #716AA7;border-radius: 100%;text-align: center; line-height: 40px; color: #fff;font-weight: 600; }
+.item-book .btn{display: block;}
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+
+}
+
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+/* Always do mobile-first, and consider using em units: http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw
+*/
+
+
+
+@media screen and (max-width: 1200px) {
+    #navbar-desktop {
+        margin: 0 4em 0 14em;
+    }
+    #navbar-desktop ul li{
+        margin: 0 0.25em;
+    }
+
+    #navbar-desktop ul li a {
+        font-size: 13px;
+    }
+
+    #navbar-desktop ul li.intro{
+        margin: 0 0.5em 0 2em;
+    }
+
+
+} 
+
+
+@media screen and (max-width: 1024px) {
+    #navbar-desktop{
+        margin: 2em 0 0 0;
+        width: 100%;
+        float: left;
+        text-align: center;
+
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+
+    .item-book{
+        margin: 1em 0 1em;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    body{
+        background: none !important;
+    }
+    .popup-contenedor {padding:0px !important;}
+
+    .w-print{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    #header .navbar-brand {
+        max-width: 180px;
+        width: 100%;
+        background-size: contain;
+    }
+}
+
+.gris {
+    color: #848284;
+    font-family: 'PlutoCondRegular';
+} 
+
+.cont {min-height:311px;}
+
+.fa-facebook-square {color:#4267B2;}
+.fa-envelope {color:#EBCF49;}
+
+
+
+
+
